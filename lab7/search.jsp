@@ -47,9 +47,9 @@ rs = s.executeUpdate(sql);
 <%
 while( rs.next() ){
 %><tr>
-<td><%= rs.getString("FIRSTNAME") %></td>
-
-
+<td><%= rs.getString(1) %></td>
+<td><%=rs.getString(2)%></td>
+<td><%=rs.getString(3)%></td>
 </tr>
 <%
 }
